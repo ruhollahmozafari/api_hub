@@ -1,8 +1,5 @@
-from asgiref.sync import sync_to_async
-
 from api_hub.schemas import RequestModel, ResponseModel
 from .abstract_post_action_client import AbstractPostActionClient
-from ..models import ServiceAPILog
 
 
 class DoAPostActionExcample(AbstractPostActionClient):

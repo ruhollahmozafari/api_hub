@@ -1,0 +1,2 @@
+djagno
+pydantic==2.10.4

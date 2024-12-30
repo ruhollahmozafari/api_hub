@@ -1,9 +1,9 @@
 from django.conf import settings
 from django.db import models
-from utility.models.base_model import TimeStampModel
 
-
-class ServiceAPILog(TimeStampModel):
+class ServiceAPILog(models.Model):
+    updated_on = models.DateTimeField(auto_now=True, blank=True, null=True, )
+    created_on = models.DateTimeField(auto_now_add=True, blank=True, null=True)
 
     endpoint = models.CharField(max_length=5000)
     service_name = models.CharField(max_length=100, null=True, blank=True, )
